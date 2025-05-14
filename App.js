@@ -7,7 +7,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style ={styles.title}>Personagens</Text>
+      <Text style ={styles.title}>Personagens</Text> 
       <ScrollView contentContainerStyle={styles.scrollContainer}>
         <View style={styles.row}>
           {personagens.map((personagem) => (
@@ -17,7 +17,7 @@ export default function App() {
               anime={personagem.anime}
               imagem={personagem.imagem}
             />
-          ))}
+          ))} 
         </View>
       </ScrollView>
       <StatusBar style="auto" />
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   },
   row: {
     flexDirection: 'row',
-    flexWrap: 'wrap', // Permite que os cards quebrem linha se necessário
+    flexWrap: 'wrap', 
     justifyContent: 'center',
   },
   title: {

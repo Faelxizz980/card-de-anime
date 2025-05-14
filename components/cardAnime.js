@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, PushNotificationIOS } from 'react-native';
 
 export default function CardAnime({ nome = "Não informado", anime = "Não informado", imagem }) {
   return (
@@ -8,7 +8,8 @@ export default function CardAnime({ nome = "Não informado", anime = "Não infor
       <Text style={styles.nome}>{nome}</Text>
       <Text style={styles.anime}>{anime}</Text>
     </View>
-  );
+  );   
+
 }
 
 const styles = StyleSheet.create({
@@ -18,7 +19,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     alignItems: 'center',
     flexDirection: 'column',
-    backgroundColor: '#08204d', // Cor padrão do card
+    backgroundColor: '#08204d',
   },
   image: {
     width: 100,
